@@ -89,51 +89,58 @@ const reducer = (state, action) => {
 }
 
 const initialState = {
-  decks: [
+  "decks": [
     {
       "id": 1,
-      "name": "Rendering in React",
-      "description": "React's component structure allows for quickly building a complex web application that relies on DOM manipulation. "
+      "name": "Wines at Canopy",
+      "description": "All wines and descriptions currently offered at The Canopy Lounge."
     },
     {
-      "name": "React Router",
-      "description": "React Router is a collection of navigational components that compose declaratively with your application.",
+      "name": "Food at The Canopy Lounge",
+      "description": "Trivia regarding food at the The Canopy Lounge.",
       "id": 2
     }
   ],
-  cards: [
+  "cards": [
     {
       "id": 1,
-      "front": "Differentiate between Real DOM and Virtual DOM.",
-      "back": "Virtual DOM updates are faster but do not directly update the HTML",
+      "front": "What Pinor Noirs do we have?",
+      "back": "Candoni, and Buena Vista",
       "deckId": 1
     },
     {
       "id": 2,
-      "front": "How do you modify the state of a different React component?",
-      "back": "Not at all! State is visible to the component only.",
+      "front": "How many red wine blends do we carry?",
+      "back": "4",
       "deckId": 1
     },
     {
       "id": 3,
-      "front": "How do you pass data 'down' to a React child component?",
-      "back": "As properties or props",
+      "front": "What ingredients are in the Bear With Me?",
+      "back": "Highclere castle gin, honey lavender syrup, lemon juice.",
       "deckId": 1
     },
     {
-      "front": "What path will match the follow Route?\n<Route>\n  <NotFound />\n</Route>",
-      "back": "All paths. A route with no path matches all URL's",
+      "front": "What is the most expensive item on our food menu?",
+      "back": "Venison Medallions.",
       "deckId": 2,
       "id": 4
     },
     {
-      "front": "What does <Switch> do?",
-      "back": "Renders the first matching child <Route> ",
+      "front": "What comes on top of the baked crab artichoke dip?",
+      "back": "Pesto.",
+      "deckId": 2,
+      "id": 5
+    },
+    {
+      "front": "What is the base for the Five mushroom soup?",
+      "back": "A sherry cream.",
       "deckId": 2,
       "id": 5
     }
   ]
 }
+
 
 const DecksContext = createContext(initialState)
 
